@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crystal Valley Estates — Sawantwadi, Sindhudurg | Future India Infratech</title>
+<meta name="description" content="Pre-launch 1 BHK resort service apartments in Sawantwadi, Sindhudurg on NH-66. G+7 resort, 810 sq.ft, assured 6% p.a. rental. Marketed by Future India Infratech for Crystal Valley Estates & O2 Builders.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pine:#0E211E;
+    --pine-2:#153330;
+    --pine-3:#1D423D;
+    --sand:#EFE7D2;
+    --sand-2:#E7DDC2;
+    --ink:#17241F;
+    --ink-soft:#425048;
+    --gold:#B9872F;
+    --gold-bright:#DDAE4E;
+    --teal:#1F6F63;
+    --teal-deep:#164F46;
+    --line:#D7C9A0;
+    --line-dark:rgba(238,230,200,0.18);
+    --cream:#F6F1E2;
+    --whatsapp:#25D366;
+    --radius:2px;
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Manrope',sans-serif;
+    color:var(--ink);
+    background:var(--sand);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    margin:0 0 0.4em 0;
+    line-height:1.08;
+    letter-spacing:-0.01em;
+  }
+  p{margin:0 0 1em 0;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+  section{position:relative;}
+  ::selection{background:var(--gold);color:var(--pine);}
+
+  /* focus visibility */
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
+    outline:2px solid var(--gold-bright); outline-offset:3px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
+  }
+
+  /* ---------- Announcement bar ---------- */
+  .announce{
+    background:var(--pine);
+    color:var(--cream);
+    text-align:center;
+    font-size:13px;
+    letter-spacing:0.03em;
+    padding:9px 16px;
+    border-bottom:1px solid var(--line-dark);
+  }
+  .announce strong{color:var(--gold-bright);}
+
+  /* ---------- Nav ---------- */
+  header.site{
+    position:sticky; top:0; z-index:40;
+    background:rgba(14,33,30,0.96);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line-dark);
+  }
+  nav.wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 28px;
+  }
+  .brand{display:flex; align-items:center; gap:12px;}
+  .brand img{height:38px; width:auto;}
+  .brand-text{color:var(--cream);}
+  .brand-text .k1{font-family:'Fraunces',serif; font-size:16.5px; font-weight:600; letter-spacing:0.01em;}
+  .brand-text .k2{font-size:10.5px; letter-spacing:0.14em; color:var(--gold-bright); text-transform:uppercase;}
+  .navlinks{display:flex; gap:28px; align-items:center;}
+  .navlinks a{color:var(--cream); font-size:14px; opacity:0.85; transition:opacity .2s;}
+  .navlinks a:hover{opacity:1; color:var(--gold-bright);}
+  .nav-cta{
+    background:var(--gold); color:var(--pine); padding:10px 18px;
+    border-radius:var(--radius); font-weight:700; font-size:13.5px;
+    letter-spacing:0.02em;
+  }
+  .nav-cta:hover{background:var(--gold-bright);}
+  .navtoggle{display:none; background:none; border:0; color:var(--cream); font-size:26px; cursor:pointer;}
+  @media (max-width:880px){
+    .navlinks{
+      position:absolute; top:100%; left:0; right:0; background:var(--pine);
+      flex-direction:column; align-items:flex-start; padding:18px 28px 24px;
+      display:none; gap:16px; border-bottom:1px solid var(--line-dark);
+    }
+    .navlinks.open{display:flex;}
+    .navtoggle{display:block;}
+    .nav-cta{display:none;}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative; min-height:92vh; display:flex; align-items:flex-end;
+    background:linear-gradient(180deg, rgba(10,24,22,0.35) 0%, rgba(9,20,18,0.55) 55%, rgba(8,17,15,0.92) 100%), url('assets/hero-cliffside.jpeg') center/cover no-repeat;
+    color:var(--cream);
+  }
+  .hero-inner{padding:70px 0 60px;}
+  .eyebrow{
+    display:inline-block; font-size:12.5px; letter-spacing:0.18em; text-transform:uppercase;
+    color:var(--gold-bright); border:1px solid rgba(221,174,78,0.5); padding:6px 14px;
+    border-radius:20px; margin-bottom:22px;
+  }
+  .hero h1{
+    font-size:clamp(34px, 5.4vw, 68px); max-width:920px; color:var(--cream);
+  }
+  .hero h1 em{font-style:italic; color:var(--gold-bright);}
+  .hero .sub{
+    max-width:560px; font-size:17px; color:rgba(246,241,226,0.85); margin-top:14px;
+  }
+  .hero-ctas{display:flex; gap:14px; margin-top:32px; flex-wrap:wrap;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px; padding:14px 26px; border-radius:var(--radius);
+    font-weight:700; font-size:14.5px; letter-spacing:0.01em; cursor:pointer; border:1px solid transparent;
+    transition:all .2s ease;
+  }
+  .btn-gold{background:var(--gold); color:var(--pine);}
+  .btn-gold:hover{background:var(--gold-bright); transform:translateY(-1px);}
+  .btn-ghost{background:transparent; color:var(--cream); border-color:rgba(246,241,226,0.5);}
+  .btn-ghost:hover{border-color:var(--gold-bright); color:var(--gold-bright);}
+  .btn-teal{background:var(--teal); color:#fff;}
+  .btn-teal:hover{background:var(--teal-deep);}
+
+  .hero-stats{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:0; margin-top:52px;
+    border-top:1px solid rgba(246,241,226,0.22); padding-top:22px;
+  }
+  .hero-stats .stat{padding-right:18px;}
+  .hero-stats .num{font-family:'Fraunces',serif; font-size:26px; color:var(--gold-bright); font-weight:600;}
+  .hero-stats .lbl{font-size:12px; color:rgba(246,241,226,0.75); letter-spacing:0.03em; margin-top:2px;}
+  @media (max-width:760px){
+    .hero-stats{grid-template-columns:repeat(2,1fr); row-gap:20px;}
+  }
+
+  /* ---------- Tide divider (signature element) ---------- */
+  .tide{display:block; width:100%; height:64px; margin:0;}
+  .tide-sand-to-pine path{fill:var(--pine);}
+  .tide-pine-to-sand path{fill:var(--sand);}
+  .tide-sand-to-sand2 path{fill:var(--sand-2);}
+  .tide-sand2-to-pine path{fill:var(--pine);}
+
+  /* ---------- generic section styling ---------- */
+  .section{padding:88px 0;}
+  .section.dark{background:var(--pine); color:var(--cream);}
+  .section.alt{background:var(--sand-2);}
+  .kicker{
+    font-size:12.5px; letter-spacing:0.18em; text-transform:uppercase; color:var(--teal);
+    font-weight:700; margin-bottom:12px;
+  }
+  .section.dark .kicker{color:var(--gold-bright);}
+  .section h2{font-size:clamp(26px,3.4vw,42px);}
+  .lead{max-width:640px; font-size:16.5px; color:var(--ink-soft);}
+  .section.dark .lead{color:rgba(246,241,226,0.82);}
+
+  /* ---------- About / overview ---------- */
+  .about-grid{
+    display:grid; grid-template-columns:1.05fr 0.95fr; gap:56px; align-items:center; margin-top:40px;
+  }
+  .about-grid img{border-radius:var(--radius); box-shadow:0 24px 60px -20px rgba(20,40,30,0.35);}
+  .about-list{list-style:none; margin:26px 0 0; padding:0; display:grid; gap:14px;}
+  .about-list li{
+    display:flex; gap:12px; font-size:14.5px; color:var(--ink); align-items:flex-start;
+    border-top:1px solid var(--line); padding-top:14px;
+  }
+  .about-list li .tag{
+    font-family:'Fraunces',serif; color:var(--gold); font-weight:600; font-size:14px; min-width:96px;
+  }
+  @media (max-width:900px){.about-grid{grid-template-columns:1fr;}}
+
+  /* ---------- Residences ---------- */
+  .res-grid{display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:center; margin-top:40px;}
+  .res-grid img{border-radius:var(--radius); border:1px solid var(--line);}
+  .spec-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:18px; margin-top:24px;}
+  .spec-card{background:#fff; border:1px solid var(--line); padding:18px 20px; border-radius:var(--radius);}
+  .spec-card .n{font-family:'Fraunces',serif; font-size:22px; color:var(--teal); font-weight:600;}
+  .spec-card .l{font-size:12.5px; color:var(--ink-soft); letter-spacing:0.02em; margin-top:2px;}
+  @media (max-width:900px){.res-grid{grid-template-columns:1fr;}}
+
+  /* ---------- Gallery ---------- */
+  .gal{
+    display:grid; grid-template-columns:repeat(6,1fr); grid-auto-rows:150px; gap:12px; margin-top:40px;
+  }
+  .gal figure{margin:0; overflow:hidden; border-radius:var(--radius); position:relative;}
+  .gal figure img{width:100%; height:100%; object-fit:cover; transition:transform .5s ease;}
+  .gal figure:hover img{transform:scale(1.06);}
+  .gal figcaption{
+    position:absolute; left:0; right:0; bottom:0; padding:10px 12px; font-size:12px;
+    color:#fff; background:linear-gradient(0deg, rgba(10,20,18,0.75), transparent);
+  }
+  .gal .g1{grid-column:span 3; grid-row:span 2;}
+  .gal .g2{grid-column:span 3; grid-row:span 1;}
+  .gal .g3{grid-column:span 3; grid-row:span 1;}
+  .gal .g4{grid-column:span 2; grid-row:span 2;}
+  .gal .g5{grid-column:span 2; grid-row:span 2;}
+  .gal .g6{grid-column:span 2; grid-row:span 2;}
+  @media (max-width:820px){
+    .gal{grid-template-columns:repeat(2,1fr); grid-auto-rows:170px;}
+    .gal .g1,.gal .g2,.gal .g3,.gal .g4,.gal .g5,.gal .g6{grid-column:span 1; grid-row:span 1;}
+  }
+
+  /* ---------- Location / compass ---------- */
+  .loc-grid{display:grid; grid-template-columns:0.85fr 1.15fr; gap:56px; margin-top:44px; align-items:start;}
+  .compass-wrap{display:flex; justify-content:center;}
+  .conn-list{list-style:none; margin:0; padding:0; display:grid; gap:0;}
+  .conn-list li{
+    display:flex; justify-content:space-between; align-items:center; gap:14px;
+    padding:14px 0; border-top:1px solid var(--line-dark); font-size:14.5px;
+  }
+  .conn-list li .place{color:var(--cream); font-weight:600;}
+  .conn-list li .time{color:var(--gold-bright); font-family:'Fraunces',serif; font-size:14.5px; white-space:nowrap;}
+  .macro-note{
+    margin-top:28px; padding-top:22px; border-top:1px solid var(--line-dark);
+    font-size:13.5px; color:rgba(246,241,226,0.75); display:grid; gap:8px;
+  }
+  @media (max-width:900px){.loc-grid{grid-template-columns:1fr;}}
+
+  /* ---------- Why Sindhudurg ---------- */
+  .why-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:44px;}
+  .why-card{background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:26px 24px;}
+  .why-card .ico{
+    width:38px; height:38px; border-radius:50%; background:var(--teal); color:#fff;
+    display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:15px; margin-bottom:14px;
+  }
+  .why-card h3{font-size:17px;}
+  .why-card p{font-size:14px; color:var(--ink-soft); margin:0;}
+  @media (max-width:820px){.why-grid{grid-template-columns:1fr;}}
+
+  .upcoming{margin-top:52px;}
+  .upcoming h3{font-size:19px; margin-bottom:18px;}
+  .up-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px;}
+  .up-card{border-left:2px solid var(--gold); padding-left:16px;}
+  .up-card .u-t{font-family:'Fraunces',serif; font-weight:600; font-size:16px; margin-bottom:4px;}
+  .up-card p{font-size:13.5px; color:var(--ink-soft); margin:0;}
+  @media (max-width:820px){.up-grid{grid-template-columns:1fr;}}
+
+  /* ---------- Pricing ---------- */
+  .price-hero{
+    display:flex; flex-wrap:wrap; gap:28px; align-items:flex-end; justify-content:space-between;
+    margin:36px 0 40px; padding:26px 28px; background:var(--pine); color:var(--cream); border-radius:var(--radius);
+  }
+  .price-hero .p-now .amt{font-family:'Fraunces',serif; font-size:40px; color:var(--gold-bright); font-weight:600;}
+  .price-hero .p-now .lbl{font-size:12.5px; letter-spacing:0.05em; text-transform:uppercase; color:rgba(246,241,226,0.7); margin-top:4px;}
+  .price-hero .p-post{text-align:right;}
+  .price-hero .p-post .amt{font-family:'Fraunces',serif; font-size:22px; color:rgba(246,241,226,0.9); text-decoration:line-through; text-decoration-color:var(--gold-bright);}
+  .price-hero .p-post .lbl{font-size:12px; color:rgba(246,241,226,0.65); margin-top:4px;}
+
+  table.pt{width:100%; border-collapse:collapse; margin:18px 0 8px; background:#fff;}
+  table.pt caption{text-align:left; font-family:'Fraunces',serif; font-size:16px; margin-bottom:10px; font-weight:600;}
+  table.pt th, table.pt td{padding:12px 16px; border:1px solid var(--line); font-size:14px; text-align:left;}
+  table.pt th{background:var(--sand-2); font-weight:700; letter-spacing:0.02em;}
+  table.pt td.num, table.pt th.num{text-align:right; font-variant-numeric:tabular-nums;}
+  .two-col-tables{display:grid; grid-template-columns:1fr 1fr; gap:36px; margin-top:44px;}
+  @media (max-width:800px){.two-col-tables{grid-template-columns:1fr;}}
+
+  .terms{margin-top:44px;}
+  .terms ul{margin:14px 0 0; padding-left:20px; font-size:14px; color:var(--ink-soft); display:grid; gap:8px;}
+
+  .cta-strip{margin-top:34px; padding:22px 26px; background:#fff; border:1px dashed var(--gold); border-radius:var(--radius); font-size:13.5px; color:var(--ink-soft);}
+
+  .plan-steps{list-style:none; margin:20px 0 0; padding:0; counter-reset:step; display:grid; gap:0;}
+  .plan-steps li{
+    counter-increment:step; display:grid; grid-template-columns:40px 1fr auto auto; gap:14px; align-items:center;
+    padding:13px 0; border-top:1px solid var(--line); font-size:14px;
+  }
+  .plan-steps li::before{
+    content:counter(step,decimal-leading-zero); font-family:'Fraunces',serif; color:var(--gold); font-weight:600; font-size:14px;
+  }
+  .plan-steps li .stage{font-weight:700;}
+  .plan-steps li .pct{color:var(--teal); font-weight:700; text-align:right;}
+  .plan-steps li .amt{font-variant-numeric:tabular-nums; text-align:right; color:var(--ink-soft);}
+  @media (max-width:640px){
+    .plan-steps li{grid-template-columns:26px 1fr; row-gap:2px;}
+    .plan-steps li .pct, .plan-steps li .amt{grid-column:2; text-align:left;}
+  }
+
+  .rental-box{margin-top:44px; background:var(--teal-deep); color:#fff; border-radius:var(--radius); padding:30px 30px;}
+  .rental-box h3{color:#fff; font-size:19px;}
+  .rental-box .rb-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:18px;}
+  .rental-box .rb-grid .n{font-family:'Fraunces',serif; font-size:24px; color:var(--gold-bright);}
+  .rental-box .rb-grid .l{font-size:12.5px; opacity:0.8; margin-top:2px;}
+  @media (max-width:760px){.rental-box .rb-grid{grid-template-columns:1fr;}}
+
+  /* ---------- Enquiry / OTP ---------- */
+  .enquiry{
+    background:var(--pine); color:var(--cream);
+  }
+  .enq-grid{display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; margin-top:40px;}
+  .enq-info .ir{display:flex; gap:12px; padding:14px 0; border-top:1px solid var(--line-dark); font-size:14.5px;}
+  .enq-info .ir strong{color:var(--gold-bright); display:block; font-size:12px; letter-spacing:0.05em; text-transform:uppercase; margin-bottom:3px;}
+  .form-card{background:var(--cream); color:var(--ink); border-radius:var(--radius); padding:30px; box-shadow:0 30px 70px -30px rgba(0,0,0,0.5);}
+  .form-card h3{font-size:20px;}
+  .form-card .muted{font-size:13px; color:var(--ink-soft); margin-bottom:20px;}
+  .f-row{display:grid; gap:6px; margin-bottom:16px;}
+  .f-row label{font-size:12.5px; font-weight:700; letter-spacing:0.02em; text-transform:uppercase; color:var(--ink-soft);}
+  .f-row input, .f-row textarea{
+    border:1px solid var(--line); background:#fff; padding:12px 14px; border-radius:var(--radius);
+    font-family:'Manrope',sans-serif; font-size:14.5px; color:var(--ink);
+  }
+  .f-row-2{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  @media (max-width:520px){.f-row-2{grid-template-columns:1fr;}}
+  .otp-row{display:flex; gap:10px; align-items:flex-start;}
+  .otp-row input{flex:1;}
+  .btn-send{white-space:nowrap; background:var(--teal); color:#fff; border:0; padding:12px 16px; border-radius:var(--radius); font-weight:700; font-size:13px; cursor:pointer;}
+  .btn-send:disabled{opacity:0.55; cursor:not-allowed;}
+  .helper{font-size:12.5px; color:var(--ink-soft); margin-top:6px;}
+  .helper.ok{color:var(--teal);}
+  .helper.err{color:#B5442E;}
+  .submit-btn{
+    width:100%; background:var(--gold); color:var(--pine); border:0; padding:15px; border-radius:var(--radius);
+    font-weight:800; font-size:14.5px; letter-spacing:0.02em; cursor:pointer; margin-top:6px;
+  }
+  .submit-btn:hover{background:var(--gold-bright);}
+  .submit-btn:disabled{opacity:0.5; cursor:not-allowed;}
+  .step-hidden{display:none;}
+  .success-box{
+    display:none; text-align:center; padding:20px 10px 6px;
+  }
+  .success-box.show{display:block;}
+  .success-box .tick{
+    width:52px; height:52px; border-radius:50%; background:var(--teal); color:#fff; display:flex;
+    align-items:center; justify-content:center; font-size:26px; margin:0 auto 14px;
+  }
+  .dl-btn{
+    display:inline-flex; margin-top:14px; background:var(--pine); color:var(--cream); padding:13px 22px;
+    border-radius:var(--radius); font-weight:700; font-size:14px;
+  }
+  .dl-btn:hover{background:var(--teal-deep);}
+  .demo-note{
+    margin-top:16px; font-size:11.5px; color:var(--ink-soft); border-top:1px dashed var(--line); padding-top:10px;
+  }
+
+  /* ---------- Footer ---------- */
+  footer{background:#0A1917; color:rgba(246,241,226,0.78); padding:56px 0 30px; font-size:13.5px;}
+  .f-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:36px;}
+  .f-brand{display:flex; align-items:center; gap:10px; margin-bottom:14px;}
+  .f-brand img{height:30px;}
+  .f-brand span{font-family:'Fraunces',serif; color:var(--cream); font-size:15px; font-weight:600;}
+  .f-col h4{color:var(--cream); font-size:12.5px; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:14px; font-family:'Manrope',sans-serif; font-weight:700;}
+  .f-col a, .f-col p{display:block; margin-bottom:9px; color:rgba(246,241,226,0.75);}
+  .f-col a:hover{color:var(--gold-bright);}
+  .f-disclaimer{
+    margin-top:40px; padding-top:24px; border-top:1px solid var(--line-dark);
+    font-size:11.5px; color:rgba(246,241,226,0.5); line-height:1.7;
+  }
+  .f-bottom{display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-top:20px; font-size:12px; color:rgba(246,241,226,0.5);}
+  @media (max-width:900px){.f-grid{grid-template-columns:1fr 1fr;}}
+  @media (max-width:560px){.f-grid{grid-template-columns:1fr;}}
+
+  /* ---------- FAB ---------- */
+  .fab-stack{position:fixed; right:22px; bottom:24px; display:flex; flex-direction:column; gap:12px; z-index:50;}
+  .fab{
+    width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+    color:#fff; box-shadow:0 10px 26px -6px rgba(0,0,0,0.45); position:relative;
+  }
+  .fab svg{width:26px; height:26px;}
+  .fab.wa{background:var(--whatsapp);}
+  .fab.call{background:var(--gold); color:var(--pine);}
+  .fab .tip{
+    position:absolute; right:66px; top:50%; transform:translateY(-50%);
+    background:var(--pine); color:var(--cream); font-size:12.5px; padding:7px 12px; border-radius:4px;
+    white-space:nowrap; opacity:0; pointer-events:none; transition:opacity .15s;
+  }
+  .fab:hover .tip{opacity:1;}
+  .fab:hover{filter:brightness(1.06);}
+
+  /* reveal animation */
+  .reveal{opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1; transform:translateY(0);}
+</style>
+</head>
+<body>
+
+<div class="announce">
+  <strong>Pre-Launch Offer</strong> — Basic Sale Price ₹8,999/sq.ft, revising to ₹11,999/sq.ft post-RERA. Limited 1BHK inventory.
+</div>
+
+<header class="site">
+  <nav class="wrap">
+    <a href="#top" class="brand">
+      <img src="assets/logo.png" alt="Future India Infratech logo">
+      <div class="brand-text">
+        <div class="k1">Crystal Valley Estates</div>
+        <div class="k2">by O2 Builders · Marketed by Future India Infratech</div>
+      </div>
+    </a>
+    <button class="navtoggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    <div class="navlinks" id="navLinks">
+      <a href="#overview">Overview</a>
+      <a href="#residences">Residences</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#location">Location</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#why">Why Sindhudurg</a>
+      <a href="#enquire">Contact</a>
+      <a href="#enquire" class="nav-cta">Download Brochure</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap hero-inner">
+    <span class="eyebrow">Sawantwadi · Sindhudurg · Konkan Coast</span>
+    <h1>A resort address where the Sahyadris <em>meet the sea.</em></h1>
+    <p class="sub">A G+7 premium resort of fully-loaded 1 BHK service apartments on NH-66 — two minutes from the highway, thirty from the beach, forty-five from the Goa border.</p>
+    <div class="hero-ctas">
+      <a href="#enquire" class="btn btn-gold">Download Brochure</a>
+      <a href="tel:+919266962955" class="btn btn-ghost">Call 92669 62955</a>
+      <a href="https://wa.me/919650295662" target="_blank" rel="noopener" class="btn btn-ghost">WhatsApp Us</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="num">₹8,999</div><div class="lbl">Launch BSP / Sq.ft</div></div>
+      <div class="stat"><div class="num">6% p.a.</div><div class="lbl">Assured Rental Return*</div></div>
+      <div class="stat"><div class="num">G+7</div><div class="lbl">Resort Residences</div></div>
+      <div class="stat"><div class="num">810 sqft</div><div class="lbl">Fully-Loaded 1 BHK</div></div>
+    </div>
+  </div>
+</section>
+
+<svg class="tide tide-sand-to-pine" viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,60 L0,60 Z"></path></svg>
+
+<!-- OVERVIEW -->
+<section class="section" id="overview">
+  <div class="wrap">
+    <div class="kicker">Overview</div>
+    <h2>A private world of tropical luxury, built for guests and investors alike.</h2>
+    <p class="lead">Crystal Valley Estates is a signature-suite resort development on the Mumbai–Goa corridor, positioned directly on NH-66 in Sawantwadi. Developed by O2 Builders and marketed exclusively by Future India Infratech, the project is designed around one idea: a fully-managed holiday residence that works as hard for your rental income as it does for your weekend.</p>
+    <div class="about-grid reveal">
+      <img src="assets/building-render.jpeg" alt="Crystal Valley Estates G+7 resort building render at dusk">
+      <div>
+        <ul class="about-list">
+          <li><span class="tag">Format</span> G+7 resort residences, studio-style 1 BHK fully-loaded service apartments</li>
+          <li><span class="tag">Unit size</span> 810 sq.ft carpet-to-super area, private balcony/deck</li>
+          <li><span class="tag">Position</span> On NH-66 (Mumbai–Goa Highway), currently being widened to 4 lanes</li>
+          <li><span class="tag">Model</span> Assured 6% p.a. rental return on 60% of invested amount, booking to possession</li>
+          <li><span class="tag">Partners</span> O2 Builders (development) · Future India Infratech (exclusive marketing) · Crystal Valley Estates, Goa</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESIDENCES -->
+<section class="section alt" id="residences">
+  <div class="wrap">
+    <div class="kicker">Residences</div>
+    <h2>Signature Suites — 810 sq.ft, fully loaded.</h2>
+    <p class="lead">Every residence is planned as a complete, rentable holiday home: living and sleeping zone, kitchenette, dedicated wet-deck balcony, and hotel-grade finishes — ready to check guests in from day one.</p>
+    <div class="res-grid reveal">
+      <img src="assets/floor-plan.jpeg" alt="Crystal Valley Estates Signature Suites floor plan, 810 sq ft unit">
+      <div>
+        <div class="spec-grid">
+          <div class="spec-card"><div class="n">810</div><div class="l">Sq.ft — total unit area</div></div>
+          <div class="spec-card"><div class="n">1 BHK</div><div class="l">Fully loaded service apartment</div></div>
+          <div class="spec-card"><div class="n">3rd–7th</div><div class="l">Floors available at launch</div></div>
+          <div class="spec-card"><div class="n">1–12</div><div class="l">Apartments per floor, view-rated</div></div>
+        </div>
+        <div class="cta-strip">Layouts, sizes and numbering are tentative and may be revised by the developer or architect as required. Refer to the downloadable brochure for the latest floor plates.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="kicker">The Resort Experience</div>
+    <h2>Pool decks, floating lounges and jungle-edge views.</h2>
+    <p class="lead">Reference imagery from the Crystal Valley design direction — the resort's shared amenity decks are conceived around water, greenery and uninterrupted horizon views.</p>
+    <div class="gal reveal">
+      <figure class="g1"><img src="assets/aerial-pool.jpeg" alt="Curved infinity pool overlooking the jungle canopy"><figcaption>Signature infinity edge</figcaption></figure>
+      <figure class="g2"><img src="assets/pool-bar.jpeg" alt="Swim-up pool bar with floating seating"><figcaption>Swim-up pool bar</figcaption></figure>
+      <figure class="g3"><img src="assets/sunset-villa.jpeg" alt="Private pool deck at sunset"><figcaption>Private pool deck</figcaption></figure>
+      <figure class="g4"><img src="assets/loungers.jpeg" alt="Poolside loungers under Bali umbrellas"><figcaption>Poolside cabanas</figcaption></figure>
+      <figure class="g5"><img src="assets/pagoda-pool.jpeg" alt="Multi-level resort pool with pagoda restaurant"><figcaption>Multi-level amenity deck</figcaption></figure>
+      <figure class="g6"><img src="assets/sunrise-pool.jpeg" alt="Infinity pool at sunrise over the valley"><figcaption>Sunrise over the valley</figcaption></figure>
+    </div>
+    <p class="helper" style="margin-top:16px;">Visuals are indicative renders/reference images for design direction and not a photograph of the completed project.</p>
+  </div>
+</section>
+
+<svg class="tide tide-sand-to-pine" viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,30 C200,0 400,60 600,30 C800,0 1000,60 1200,30 L1200,60 L0,60 Z"></path></svg>
+
+<!-- LOCATION -->
+<section class="section dark" id="location">
+  <div class="wrap">
+    <div class="kicker">Location & Connectivity</div>
+    <h2>On the highway. Near the coast. Close to everything.</h2>
+    <p class="lead">Sawantwadi sits at the heart of the Mumbai–Goa corridor — NH-66 runs past the project, and the North Goa airport, beaches and casinos are all under an hour away.</p>
+    <div class="loc-grid">
+      <div class="compass-wrap reveal">
+        <svg width="300" height="300" viewBox="0 0 300 300" fill="none">
+          <circle cx="150" cy="150" r="128" stroke="rgba(246,241,226,0.25)" stroke-width="1"/>
+          <circle cx="150" cy="150" r="86" stroke="rgba(246,241,226,0.18)" stroke-width="1"/>
+          <line x1="150" y1="24" x2="150" y2="276" stroke="rgba(246,241,226,0.3)" stroke-width="1"/>
+          <line x1="24" y1="150" x2="276" y2="150" stroke="rgba(246,241,226,0.3)" stroke-width="1"/>
+          <text x="150" y="20" text-anchor="middle" fill="#DDAE4E" font-family="Fraunces, serif" font-size="14">N</text>
+          <text x="150" y="288" text-anchor="middle" fill="#F6F1E2" font-size="13">S</text>
+          <text x="14" y="155" text-anchor="middle" fill="#F6F1E2" font-size="13">W</text>
+          <text x="286" y="155" text-anchor="middle" fill="#F6F1E2" font-size="13">E</text>
+          <circle cx="150" cy="150" r="6" fill="#DDAE4E"/>
+          <text x="150" y="176" text-anchor="middle" fill="#F6F1E2" font-family="Fraunces, serif" font-size="12">Crystal Valley</text>
+        </svg>
+      </div>
+      <div>
+        <ul class="conn-list">
+          <li><span class="place">NH-66 (Mumbai–Goa Highway)</span><span class="time">2 min</span></li>
+          <li><span class="place">Sawantwadi Palace</span><span class="time">9 min</span></li>
+          <li><span class="place">Sawantwadi Railway Station</span><span class="time">10 min</span></li>
+          <li><span class="place">Aerocity</span><span class="time">25 min</span></li>
+          <li><span class="place">Shiroda Beach</span><span class="time">30 min</span></li>
+          <li><span class="place">MOPA International Airport</span><span class="time">30 min</span></li>
+          <li><span class="place">Deltin Casino</span><span class="time">32 min</span></li>
+          <li><span class="place">Amboli Waterfalls</span><span class="time">40 min</span></li>
+          <li><span class="place">Bollywood Film City (upcoming)</span><span class="time">45 min</span></li>
+          <li><span class="place">Goa Border</span><span class="time">45 min</span></li>
+        </ul>
+        <div class="macro-note">
+          <div>Mumbai — approx. 450–500 km · 1.5 hrs by air, 7–9 hrs by Tejas/Vande Bharat, 10–12 hrs by road.</div>
+          <div>Pune — approx. 350–400 km · 8–10 hrs by road.</div>
+          <div>Konkan Railway stations at Kudal, Kankavali and Sawantwadi run regular superfast trains to Mumbai, Goa and Mangalore.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<svg class="tide tide-pine-to-sand" viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,60 L0,60 Z"></path></svg>
+
+<!-- WHY SINDHUDURG -->
+<section class="section" id="why">
+  <div class="wrap">
+    <div class="kicker">The Investment Case</div>
+    <h2>Why Sindhudurg, why now.</h2>
+    <p class="lead">Sindhudurg is shifting from an agricultural district to a leisure and second-home destination — driven by highway upgrades, two nearby airports and Goa's overflow demand.</p>
+    <div class="why-grid reveal">
+      <div class="why-card">
+        <div class="ico">%</div>
+        <h3>7.2% regional rental yield</h3>
+        <p>Rental yields across Sindhudurg's holiday-home market run ahead of established hill-station markets like Shimla or Lonavala.</p>
+      </div>
+      <div class="why-card">
+        <div class="ico">✈</div>
+        <h3>Two airports, one district</h3>
+        <p>MOPA (North Goa) is 30–60 minutes away, and Sindhudurg's own Chipi Airport is moving toward 24x7 operations.</p>
+      </div>
+      <div class="why-card">
+        <div class="ico">↗</div>
+        <h3>10–15% appreciation expected</h3>
+        <p>Faster Mumbai–Goa connectivity via the coastal highway and NH-66 widening is projected to lift property values across the corridor.</p>
+      </div>
+    </div>
+
+    <div class="upcoming reveal">
+      <h3>Major upcoming developments nearby</h3>
+      <div class="up-grid">
+        <div class="up-card">
+          <div class="u-t">Taj Hotel, Shiroda–Velaghar</div>
+          <p>A 5-star Taj resort under development, set to lift the broader area's hospitality profile.</p>
+        </div>
+        <div class="up-card">
+          <div class="u-t">Bollywood Film City</div>
+          <p>A proposed ~₹2,000 crore film city at Nandos village, expected to draw sustained footfall and staff housing demand.</p>
+        </div>
+        <div class="up-card">
+          <div class="u-t">Asia's first underwater museum</div>
+          <p>Proposed on the Vengurla–Malvan coast, adding to the district's water-sports and tourism draw.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="upcoming reveal">
+      <h3>A district built on agriculture, fisheries and tourism</h3>
+      <div class="up-grid">
+        <div class="up-card">
+          <div class="u-t">Alphonso mango & cashew</div>
+          <p>Sindhudurg's Alphonso (Hapus) and cashew are globally known; cashew processing is the district's ODOP product.</p>
+        </div>
+        <div class="up-card">
+          <div class="u-t">121 km of coastline</div>
+          <p>Malvan, Vengurla and Devgad anchor a fishing economy alongside a fast-growing water-sports and homestay sector.</p>
+        </div>
+        <div class="up-card">
+          <div class="u-t">A strong banking network</div>
+          <p>SBI, HDFC Bank, Bank of Maharashtra and Union Bank branches serve Kudal, Kankavali and Malvan, with 24x7 ATMs on the highway.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<svg class="tide tide-sand-to-pine" viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,30 C200,0 400,60 600,30 C800,0 1000,60 1200,30 L1200,60 L0,60 Z"></path></svg>
+
+<!-- PRICING -->
+<section class="section" id="pricing" style="background:var(--sand-2);">
+  <div class="wrap">
+    <div class="kicker">Pricing & Payment Plan</div>
+    <h2>Transparent pricing, flexible payment structure.</h2>
+
+    <div class="price-hero reveal">
+      <div class="p-now">
+        <div class="amt">₹8,999 <span style="font-size:16px; font-weight:400;">/ sq.ft</span></div>
+        <div class="lbl">Pre-launch Basic Sale Price</div>
+      </div>
+      <div class="p-post">
+        <div class="amt">₹11,999 / sq.ft</div>
+        <div class="lbl">Expected Post-RERA BSP</div>
+      </div>
+    </div>
+
+    <div class="two-col-tables reveal">
+      <table class="pt">
+        <caption>Floor PLC</caption>
+        <thead><tr><th>Floor</th><th class="num">Floor PLC (₹/sq.ft)</th></tr></thead>
+        <tbody>
+          <tr><td>3rd Floor</td><td class="num">150</td></tr>
+          <tr><td>4th Floor</td><td class="num">200</td></tr>
+          <tr><td>5th Floor</td><td class="num">250</td></tr>
+          <tr><td>6th Floor</td><td class="num">300</td></tr>
+          <tr><td>7th Floor</td><td class="num">300</td></tr>
+        </tbody>
+      </table>
+      <table class="pt">
+        <caption>View PLC</caption>
+        <thead><tr><th>Units</th><th class="num">View PLC (₹/sq.ft)</th></tr></thead>
+        <tbody>
+          <tr><td>Apartment 1 to 6</td><td class="num">200</td></tr>
+          <tr><td>Apartment 7 to 12</td><td class="num">150</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="terms reveal">
+      <table class="pt" style="max-width:520px;">
+        <caption>Sample unit — 810 sq.ft, 1 BHK</caption>
+        <tbody>
+          <tr><td>Basic Sale Price</td><td class="num">₹8,999 / sq.ft</td></tr>
+          <tr><td>Development + Fire Fighting (EDC/IDC + FF)</td><td class="num">₹590 / sq.ft</td></tr>
+          <tr><td>IFMS (Interest-Free Maintenance Security)</td><td class="num">₹25 / sq.ft</td></tr>
+        </tbody>
+      </table>
+      <ul>
+        <li>Extra charges for electric meter as applicable.</li>
+        <li>Development charges (EDC/IDC) ₹500/sq.ft and fire-fighting charges ₹90/sq.ft, payable at possession.</li>
+        <li>Government charges — stamp duty, registration, GST and other statutory levies — as per government norms.</li>
+        <li>All layouts, floor plans, sizes and unit numbering are tentative and subject to change by the developer, architect or competent authority.</li>
+        <li>No price escalation on successful booking at the above prices.</li>
+        <li>Prices are subject to change without prior notice.</li>
+      </ul>
+    </div>
+
+    <div class="reveal" style="margin-top:52px;">
+      <h3 style="font-size:19px;">Construction Link Plan</h3>
+      <p class="lead" style="font-size:14px;">Payment released in nine stages, tracking construction milestones from booking through possession.</p>
+      <ul class="plan-steps">
+        <li><span class="stage">Booking</span><span class="pct">10%</span><span class="amt">of unit value</span></li>
+        <li><span class="stage">Within 30 days</span><span class="pct">10%</span><span class="amt">of unit value</span></li>
+        <li><span class="stage">Excavation</span><span class="pct">10%</span><span class="amt">of unit value</span></li>
+        <li><span class="stage">Rafting</span><span class="pct">20%</span><span class="amt">of unit value</span></li>
+        <li><span class="stage">1st Floor</span><span class="pct">10%</span><span class="amt">of unit value</span></li>
+        <li><span class="stage">4th Floor</span><span class="pct">10%</span><span class="amt">of unit value</span></li>
+        <li><span class="stage">Super Structure</span><span class="pct">10%</span><span class="amt">of unit value</span></li>
+        <li><span class="stage">Tile Work</span><span class="pct">10%</span><span class="amt">of unit value</span></li>
+        <li><span class="stage">Possession</span><span class="pct">10%</span><span class="amt">of unit value</span></li>
+      </ul>
+    </div>
+
+    <div class="rental-box reveal">
+      <h3>Assured Rental Payment Plan (60 : 20 : 20)</h3>
+      <p style="opacity:0.85; font-size:14px; margin-top:6px;">An alternate plan for investors who want assured returns rather than a construction-linked schedule.</p>
+      <div class="rb-grid">
+        <div><div class="n">60%</div><div class="l">Due at booking</div></div>
+        <div><div class="n">20%</div><div class="l">Due at structure completion</div></div>
+        <div><div class="n">20%</div><div class="l">Due at possession</div></div>
+      </div>
+      <p style="margin-top:18px; font-size:13.5px; opacity:0.85;">6% per annum assured rental is paid on the 60% invested amount only, from booking until possession. The remaining 40% (per the payment plan) is not included in the rental calculation. Exact figures are quoted per unit at the time of booking — see the brochure for a worked example.</p>
+    </div>
+
+    <p class="helper" style="margin-top:26px;">*Assured rental is a commercial arrangement offered by the developer and is not a guaranteed or RERA-regulated return. Please read all project documents and the definitive agreement before booking.</p>
+  </div>
+</section>
+
+<svg class="tide tide-sand2-to-pine" viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,60 L0,60 Z"></path></svg>
+
+<!-- ENQUIRY / OTP GATED BROCHURE -->
+<section class="section enquiry" id="enquire">
+  <div class="wrap">
+    <div class="kicker">Enquire & Download</div>
+    <h2>Get the full brochure and price list.</h2>
+    <p class="lead">Verify your phone number to instantly download the Crystal Valley Estates brochure and current price list — or speak to us directly.</p>
+
+    <div class="enq-grid">
+      <div class="enq-info reveal">
+        <div class="ir">
+          <div>
+            <strong>Call</strong>
+            <a href="tel:+919266962955">+91 92669 62955</a>
+          </div>
+        </div>
+        <div class="ir">
+          <div>
+            <strong>WhatsApp</strong>
+            <a href="https://wa.me/919650295662" target="_blank" rel="noopener">+91 96502 95662</a>
+          </div>
+        </div>
+        <div class="ir">
+          <div>
+            <strong>Registered Office</strong>
+            <span>Future India Infratech<br>D-213, Ground Floor, Sector 63,<br>Noida, Uttar Pradesh 201301</span>
+          </div>
+        </div>
+        <div class="ir">
+          <div>
+            <strong>Marketing Mandate</strong>
+            <span>Exclusive marketing partner for Forbes Global Properties and Crystal Valley Estates, Goa. Leading luxury real estate consultants based in Noida.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card reveal">
+        <div id="formStep">
+          <h3>Verify & Download</h3>
+          <p class="muted">We'll text a one-time code to confirm your number before sending the brochure.</p>
+          <form id="enquiryForm" novalidate>
+            <div class="f-row-2">
+              <div class="f-row">
+                <label for="fname">Full name</label>
+                <input type="text" id="fname" name="fname" required placeholder="Your name">
+              </div>
+              <div class="f-row">
+                <label for="femail">Email</label>
+                <input type="email" id="femail" name="femail" required placeholder="you@email.com">
+              </div>
+            </div>
+            <div class="f-row">
+              <label for="fphone">Mobile number</label>
+              <div class="otp-row">
+                <input type="tel" id="fphone" name="fphone" required placeholder="10-digit mobile number" maxlength="10" inputmode="numeric">
+                <button type="button" class="btn-send" id="sendOtpBtn">Send OTP</button>
+              </div>
+              <div class="helper" id="phoneHelper"></div>
+            </div>
+            <div class="f-row step-hidden" id="otpRow">
+              <label for="fotp">Enter OTP</label>
+              <input type="text" id="fotp" name="fotp" maxlength="6" inputmode="numeric" placeholder="6-digit code">
+              <div class="helper" id="otpHelper"></div>
+            </div>
+            <div class="f-row">
+              <label for="fmsg">Message (optional)</label>
+              <textarea id="fmsg" name="fmsg" rows="2" placeholder="Tell us what you're looking for"></textarea>
+            </div>
+            <button type="submit" class="submit-btn" id="verifyBtn" disabled>Verify OTP & Download Brochure</button>
+          </form>
+        </div>
+
+        <div class="success-box" id="successBox">
+          <div class="tick">✓</div>
+          <h3 style="margin-bottom:6px;">Number verified</h3>
+          <p class="muted" style="margin-bottom:0;">Thanks — your download is ready, and our team will call you shortly.</p>
+          <a href="assets/crystal-valley-brochure.pdf" download class="dl-btn">Download Brochure (PDF)</a><br>
+          <a href="assets/crystal-valley-price-list.pdf" download class="dl-btn" style="margin-top:10px; background:var(--teal-deep);">Download Price List (PDF)</a>
+        </div>
+
+        <div class="demo-note">
+          Demo build: OTP is generated and verified in-browser for preview purposes and isn't sent by real SMS yet. To go live, this form needs to be wired to an SMS/OTP gateway (e.g. MSG91, Twilio Verify) and a backend endpoint to store leads securely.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="f-brand">
+          <img src="assets/logo.png" alt="Future India Infratech logo">
+          <span>Future India Infratech</span>
+        </div>
+        <p style="max-width:280px;">Exclusive marketing partner for Forbes Global Properties and Crystal Valley Estates, Goa — leading luxury real estate consultants based in Noida.</p>
+      </div>
+      <div class="f-col">
+        <h4>Explore</h4>
+        <a href="#overview">Overview</a>
+        <a href="#residences">Residences</a>
+        <a href="#location">Location</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+      <div class="f-col">
+        <h4>Company</h4>
+        <a href="#why">Why Sindhudurg</a>
+        <a href="#enquire">Contact Us</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div class="f-col">
+        <h4>Reach Us</h4>
+        <a href="tel:+919266962955">+91 92669 62955</a>
+        <a href="https://wa.me/919650295662" target="_blank" rel="noopener">WhatsApp</a>
+        <p>D-213, Ground Floor, Sector 63,<br>Noida, Uttar Pradesh 201301</p>
+      </div>
+    </div>
+    <div class="f-disclaimer">
+      This is a pre-launch marketing offer for Crystal Valley Estates, developed by O2 Builders. The project is yet to be registered under RERA; a RERA registration number will be published prior to sale as required by law. All images, renders, floor plans and amenity visuals are representative and indicative of design intent only, and may differ from the final construction. Prices, PLCs, payment plans and specifications are subject to change without prior notice at the sole discretion of the developer. This is not an offer or invitation to invest, and does not constitute investment or financial advice — please verify all details independently before making any payment.
+    </div>
+    <div class="f-bottom">
+      <span>© 2026 Future India Infratech. All rights reserved.</span>
+      <span>Sawantwadi, Sindhudurg, Maharashtra</span>
+    </div>
+  </div>
+</footer>
+
+<div class="fab-stack">
+  <a class="fab wa" href="https://wa.me/919650295662" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <span class="tip">Chat on WhatsApp</span>
+    <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.699 4.606 1.902 6.47L4 29l7.73-1.87A11.94 11.94 0 0 0 16.001 27C22.628 27 28 21.627 28 15S22.628 3 16.001 3Zm0 21.818a9.77 9.77 0 0 1-4.98-1.363l-.357-.213-4.59 1.11 1.13-4.47-.233-.366A9.78 9.78 0 0 1 5.182 15c0-5.964 4.855-10.818 10.82-10.818S26.818 9.036 26.818 15 21.965 24.818 16 24.818Zm5.55-8.11c-.303-.152-1.792-.884-2.07-.985-.278-.101-.48-.152-.682.152-.202.303-.783.985-.96 1.187-.176.202-.353.227-.656.076-.303-.152-1.278-.471-2.434-1.503-.9-.803-1.508-1.795-1.684-2.098-.176-.303-.019-.467.133-.618.136-.135.303-.353.454-.53.152-.176.202-.303.303-.505.101-.202.05-.379-.025-.53-.076-.152-.682-1.646-.935-2.253-.246-.591-.497-.51-.682-.52-.176-.008-.379-.01-.581-.01-.202 0-.53.076-.808.379-.278.303-1.06 1.036-1.06 2.527s1.086 2.933 1.237 3.136c.152.202 2.137 3.263 5.178 4.575.723.312 1.287.499 1.727.638.725.23 1.385.198 1.907.12.582-.087 1.792-.732 2.045-1.44.253-.707.253-1.313.177-1.44-.076-.126-.278-.202-.581-.353Z"/></svg>
+  </a>
+  <a class="fab call" href="tel:+919266962955" aria-label="Call now">
+    <span class="tip">Call 92669 62955</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+  </a>
+</div>
+
+<script>
+  // Mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => io.observe(el));
+
+  /* ---------------------------------------------------------
+     DEMO OTP FLOW
+     This is a client-side simulation only, for preview purposes.
+     In production, replace generateAndSendOtp() with a call to
+     your backend, which should call a real SMS/OTP provider
+     (e.g. MSG91, Twilio Verify, AWS SNS) and never expose the
+     OTP in the browser or in page source.
+  --------------------------------------------------------- */
+  const phoneInput = document.getElementById('fphone');
+  const sendOtpBtn = document.getElementById('sendOtpBtn');
+  const otpRow = document.getElementById('otpRow');
+  const otpInput = document.getElementById('fotp');
+  const phoneHelper = document.getElementById('phoneHelper');
+  const otpHelper = document.getElementById('otpHelper');
+  const verifyBtn = document.getElementById('verifyBtn');
+  const enquiryForm = document.getElementById('enquiryForm');
+  const formStep = document.getElementById('formStep');
+  const successBox = document.getElementById('successBox');
+
+  let generatedOtp = null;
+  let otpSentTo = null;
+
+  function isValidPhone(v){ return /^[6-9]\d{9}$/.test(v); }
+
+  sendOtpBtn.addEventListener('click', () => {
+    const phone = phoneInput.value.trim();
+    if (!isValidPhone(phone)) {
+      phoneHelper.textContent = 'Enter a valid 10-digit Indian mobile number.';
+      phoneHelper.className = 'helper err';
+      return;
+    }
+    generatedOtp = String(Math.floor(100000 + Math.random() * 900000));
+    otpSentTo = phone;
+    otpRow.classList.remove('step-hidden');
+    verifyBtn.disabled = false;
+    phoneHelper.textContent = 'OTP sent to +91 ' + phone + '.';
+    phoneHelper.className = 'helper ok';
+    sendOtpBtn.disabled = true;
+    sendOtpBtn.textContent = 'Sent';
+    setTimeout(() => { sendOtpBtn.disabled = false; sendOtpBtn.textContent = 'Resend'; }, 20000);
+
+    // Demo-only: since there is no SMS backend wired up yet, we surface
+    // the code directly so you can test the flow end-to-end.
+    otpHelper.textContent = 'Demo mode — your test code is ' + generatedOtp;
+    otpHelper.className = 'helper';
+  });
+
+  enquiryForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('fname').value.trim();
+    const email = document.getElementById('femail').value.trim();
+    const phone = phoneInput.value.trim();
+    const otp = otpInput.value.trim();
+
+    if (!name || !email || !phone) {
+      phoneHelper.textContent = 'Please fill in all required fields.';
+      phoneHelper.className = 'helper err';
+      return;
+    }
+    if (!generatedOtp || phone !== otpSentTo) {
+      otpHelper.textContent = 'Please request a fresh OTP for this number.';
+      otpHelper.className = 'helper err';
+      return;
+    }
+    if (otp !== generatedOtp) {
+      otpHelper.textContent = 'Incorrect OTP. Please try again.';
+      otpHelper.className = 'helper err';
+      return;
+    }
+
+    // In production: send {name, email, phone, message} to your CRM/lead
+    // endpoint here before revealing the download links.
+    formStep.style.display = 'none';
+    successBox.classList.add('show');
+  });
+</script>
+
+</body>
+</html>
